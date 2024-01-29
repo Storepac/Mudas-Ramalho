@@ -110,44 +110,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-// contato
-
-document.addEventListener('DOMContentLoaded', function () {
-    const contactForm = document.getElementById('contactForm');
-
-    if (contactForm) {
-        contactForm.addEventListener('submit', function (event) {
-            event.preventDefault();
-
-            // Obtendo os dados do formulário
-            const formData = new FormData(contactForm);
-            const formDataObject = {};
-            formData.forEach((value, key) => {
-                formDataObject[key] = value;
-            });
-
-            // Simulando o envio dos dados para um servidor
-            // Em um ambiente real, você deve usar uma chamada AJAX para enviar os dados para o backend
-            // Aqui, estamos apenas imprimindo os dados no console como exemplo
-            console.log('Dados do formulário:', formDataObject);
-
-            // Limpar o formulário (opcional)
-            contactForm.reset();
-
-            // Adicione a lógica para enviar os dados para o seu backend real
-            // Aqui é onde você integraria seu código de backend para enviar um e-mail
-
-            // Simulação de mensagem de sucesso (substitua isso pela lógica real)
-            alert('Mensagem enviada com sucesso!');
-        });
-    }
-});
-
-
-
-// enviar email
-
-
 
 
 // modal 

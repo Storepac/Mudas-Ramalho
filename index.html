@@ -126,6 +126,9 @@
                 <textarea id="message" name="message" rows="4" required></textarea>
 
                 <button type="submit">Enviar Mensagem</button>
+                <input type="hidden" name="_subject" value="Novo Contato!">
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_captcha" value="false">
             </form>
         </div>
 
@@ -151,7 +154,6 @@
     <footer>
         <p>&copy;  Mudas Ramalho. Todos os direitos reservados. | <span id="currentYear"></span></p>
     </footer>
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
