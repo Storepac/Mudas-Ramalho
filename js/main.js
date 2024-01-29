@@ -147,34 +147,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // enviar email
 
-document.addEventListener('DOMContentLoaded', function () {
-    emailjs.init("ramalhomudas@gmail.com"); // E-mail do  usuário do Email.js
 
-    const contactForm = document.getElementById('contactForm');
 
-    if (contactForm) {
-        contactForm.addEventListener('submit', function (event) {
-            event.preventDefault();
-
-            const formData = new FormData(contactForm);
-            const data = {};
-            formData.forEach((value, key) => {
-                data[key] = value;
-            });
-
-            // Substitua 'your_email_template_id' com o ID do seu modelo de e-mail no Email.js
-            emailjs.send("service_2xknggv", "ramalhomudas@gmail.com", data)
-                .then(function (response) {
-                    console.log("E-mail enviado com sucesso:", response);
-                    alert("Mensagem enviada com sucesso!");
-                    contactForm.reset();
-                }, function (error) {
-                    console.log("Erro ao enviar e-mail:", error);
-                    alert("Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente mais tarde.");
-                });
-        });
-    }
-});
 
 // modal 
 
