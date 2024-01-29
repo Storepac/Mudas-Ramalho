@@ -99,6 +99,14 @@ header {
 
 }
 
+.rede-social{
+  width: 40px;
+  height: auto;
+}
+.rede-social img{
+  width: 100%;
+}
+
 
 /* MOBILE RESPONSIVE FIM */
 /* emrpesa */
