@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon/ramalho.ico"> <!-- Substitua 'favicon.ico' pelo caminho real do seu ícone -->
+    <title>Plantas Verdes</title>
+</head>
+<body>
+      <div class="navbar">
+        <div class="logo">
+            <img src="img/logo sf.png" alt="Logo">
+        </div>
+        <div class="menu-btn" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav class="nav-list">
+            <a href="#inicio">Início</a>
+            <a href="#empresa">Empresa</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#oracamentos">Orçamentos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </div>
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>Bem-vindo ao Nosso Jardim</h1>
+            <p>Descubra a beleza e a diversidade das mudas de plantas em nosso espaço verde.</p>
+            <div class="saiba-mais">
+                <p>Descubra a beleza e os benefícios das plantas em sua vida.</p>
+            <button id="learnMoreBtn">Saiba Mais</button>
+            </div>
+        </div>
+    </header>
+
+    <div id="empresa" class="about-section">
+        <div class="">
+            <div class="text-column">
+                <h2>A Mudas Ramalho</h2>
+                <p id="paragraph1">Na Mudas Ramalho, temos o compromisso inabalável de oferecer mudas de qualidade superior, cultivadas com maestria e paixão. Nossa missão é proporcionar a você não apenas plantas, mas um ecossistema vibrante e saudável que transformará o seu espaço.</p>
+            </div>
+        </div>
+        <div class="empresa">
+            <div class="excelencia">
+                <h2>Excelência no Cultivo:</h2>
+                <p>Nosso compromisso com a excelência começa no solo. Utilizamos práticas de cultivo avançadas e sustentáveis para garantir que cada muda seja uma promessa de vitalidade e crescimento. Nossa equipe de especialistas agrícolas está empenhada em selecionar e cultivar variedades de mudas que atendam aos mais altos padrões de qualidade.</p>
+            </div>
+            <div class="variedade">
+                <h2>Variedade e Qualidade:</h2>
+                <p>Na Mudas Ramalho, oferecemos uma ampla gama de mudas cuidadosamente selecionadas para atender a diversos gostos e necessidades. Seja você um entusiasta do paisagismo, um amante de plantas exóticas ou um aficionado por ervas, temos o que você procura. Cada muda é inspecionada meticulosamente para garantir que atenda aos nossos padrões rigorosos.</p>
+            </div>
+            <div class="compromisso">
+                <h2>Compromisso com a Satisfação do Cliente:</h2>
+                <p>A satisfação do cliente é o coração do nosso negócio. Estamos aqui para apoiá-lo em cada etapa, desde a seleção da muda perfeita até o aconselhamento especializado sobre cuidados e cultivo. Sua jornada conosco é mais do que uma transação; é uma parceria que valorizamos profundamente.
+
+                    Na Mudas Ramalho, acreditamos que a beleza da natureza pode florescer em qualquer ambiente. Permita-nos ser seu guia nessa jornada verde, proporcionando mudas de qualidade que enriquecerão sua vida diária.</p>
+            </div>
+            <div class="image-column">
+                <img src="img/logo sf.png" alt="Sua Imagem">
+            </div>
+        </div>
+    </div>
+
+    <div id="produtos" class="produtos">
+        <h1>Produtos</h1>
+        <h3>Algumas das mudas mais procuradas pelos nossos clientes</h3>
+        <div class="card-section" id="cardSection">
+            <!-- Conteúdo dos cards está gerado dinamicamente pelo JavaScript -->
+        </div>
+    
+        <div class="pagination" id="pagination">
+            <!-- Paginação está gerada dinamicamente pelo JavaScript -->
+        </div>
+    </div>
+
+    <section id="servicos" class="main-content">
+        <h2>Serviços</h2>
+        <h3>Descubra a beleza e os benefícios das plantas em sua vida.</h3>
+
+        <div class="service-container">
+            <div class="service-box" id="paisagismo">
+                <img src="img/paisagismo.jpg" alt="Paisagismo">
+                <h3>Paisagismo</h3>
+                <p>Transformamos espaços em ambientes harmoniosos e atraentes, combinando elementos naturais com design criativo.</p>
+            </div>
+    
+            <div class="service-box" id="jardinagem">
+                <img src="img/jardinagem.jpg" alt="Jardinagem">
+                <h3>Jardinagem</h3>
+                <p>Cuidamos do seu jardim com dedicação, oferecendo serviços de manutenção, plantio e orientação especializada.</p>
+            </div>
+        </div>
+
+    </section>
+    <div id="orcamento" class="orcamento">
+        <h1>Faça seu orçamento ou tire alguma dúvida</h1>
+    </div>
+    <section id="contato" class="contact-section">
+        
+        <div class="contact-form">
+            <h2>Entre em contato com nossa equipe</h2>
+            <form id="contactForm">
+                <label for="name">Nome Completo:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">O que você gostara de saber?</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </div>
+
+        <div class="contact-info">
+            <h2>Informações de Contato</h2>
+            
+            <p><strong>Responsável:</strong> Ramalho Mudas</p>
+            <p><strong>Endereço:</strong> Herculândia -SP</p>
+            <p><strong>Telefone:</strong> +55 (14) 99635-2487</p>
+            <p><strong>E-mail:</strong> contato@example.com</p>
+            <div class="image-column">
+                <img src="img/logo sf.png" alt="Sua Imagem">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="moreInfo" class="hidden">
+        <h2>Benefícios das Plantas</h2>
+        <p>As plantas não apenas embelezam o ambiente, mas também melhoram a qualidade do ar e promovem o bem-estar.</p>
+    </section>
+    <a href="#" class="btn-top"></a>
+    <footer>
+        <p>&copy;  Mudas Ramalho. Todos os direitos reservados. | <span id="currentYear"></span></p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

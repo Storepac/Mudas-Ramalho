@@ -1,0 +1,560 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+ 
+/* Menu com nav */
+.navbar {
+  background-color: #fff;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  transition: 500ms linear; 
+}
+
+.nav-list a {
+  color: #4CAF50;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  font-weight: 600;
+}
+
+.nav-list a:hover {
+  background-color: #4CAF50;
+  color: #ffffff;
+  transition: 500ms linear; 
+  border-radius: 8px;
+}
+
+.menu-btn {
+  cursor: pointer;
+  display: none;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #4CAF50;
+  margin: 6px 0;
+}
+.logo{
+  max-width: 100px;
+  max-height: auto;
+}
+.logo img {
+  height: 90px; /* Ajuste a altura conforme necessário */
+  margin: -40px 10px;
+
+}
+/* Fim nav */
+
+/* MOBILE RESPONSIVE */
+@media screen and (max-width: 768px) {
+  .menu-btn {
+      display: block;
+  }
+
+  .logo img {
+      padding: 0;
+  }
+
+  .nav-list {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      height:auto;
+      padding: 20px 0;
+      top: 90px;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      
+  }
+
+  .nav-list a {
+      border-bottom: 1px solid white;
+  }
+
+
+
+}
+
+
+/* MOBILE RESPONSIVE FIM */
+/* emrpesa */
+
+/* O restante do CSS permanece inalterado */
+
+.about-section {
+  max-width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 30px 10px;
+  text-align: center;
+  color: #333333;
+}
+
+.about-section h2{
+  color: #45a049;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+
+ .empresa{
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Duas colunas com largura igual */
+  gap: 20px; /* Espaçamento entre as colunas */
+  max-width: 1000px; /* Largura máxima da container para evitar que fique muito largo em telas grandes */
+  margin: 20px auto; /* Centralizar o container */
+  justify-items: center;
+  align-items: center
+ }
+
+ .text-column {
+  font-size: 1.8em;
+  color: #45a049;
+}
+.text-column p {
+  margin: 10px 10px;
+  font-size: .8em;
+  color: #555555;
+  transition: opacity 2s ease;
+}
+
+.image-column {
+  display: flex;
+  max-width: 300px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.image-column img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.show {
+  opacity: 1; /* Ao adicionar a classe 'show', os parágrafos ficarão visíveis */
+}
+
+/* emrpesa */
+
+/* Primeira Section*/
+/* header */
+
+.marketing-section {
+  padding: 4em 0;
+  background-color: #f7f7f7;
+}
+
+.hero-section {
+  background: url('../img/header.jpeg') center/cover no-repeat; /* Substitua 'plant-background.jpg' pelo caminho real da sua imagem de fundo */
+  color: #ffffff;
+  text-align: center;
+  height: 100%;
+  padding: 100px 0;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-content h1 {
+  color: #e4e4e4;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+}
+.saiba-mais{
+  margin-top: 20px;
+}
+.saiba-mais button{
+  margin-top: 20px;
+  width: 200px;
+  font-weight: bold;
+}
+.saiba-mais button:hover{
+  transform: scale(1.1);
+  transition-duration: 0.4s;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-section {
+      padding: 80px 0;
+  }
+
+  .empresa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+
+}
+
+/* Efeito de rolar suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* O restante do CSS permanece inalterado */
+.produtos{
+  text-align: center;
+  padding: 20px 20px;
+}
+
+.produtos h1{
+  color: #45a049;
+}
+.produtos h3{
+  color: #333333;
+}
+
+.card-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 25px 20px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  max-width: 300px;
+  max-height: 470px;
+  width: 400px;
+  height: 450px;
+  margin: 10px 10px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.card img {
+  max-width: 500px;
+  max-height: 300px;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.card p {
+  font-size: 1.2em;
+  color: #45a049;
+  font-weight: 800;
+  padding: 10px;
+}
+
+.card p:last-child{
+  font-weight: 100;
+  color: #8d8d8d;
+  font-size: .8em;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.dot {
+  height: 1.8em;
+  width: 1.8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 1.3em;
+  background-color: #bbb;
+  border-radius: 50%;
+  transition: background-color 0.6s ease;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+
+
+
+/* Fim Primeira Section */
+
+/* inicio serviços */
+
+.main-content {
+  height: 100%;
+  text-align: center;
+  padding: 3em;
+  background-color: #45a049;
+}
+
+.main-content h2, h3{
+  color: #fff;
+}
+
+/* Estilos gerais */
+.service-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+
+}
+
+.service-box {
+  background-color: #fff;
+  text-align: center;
+  max-width: 500px;
+  padding: 10px ;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.service-box:hover {
+  transform: scale(1.05);
+}
+
+.service-box img {
+  max-width: 100%;
+  width: 500px;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.service-box h3 {
+  color: #45a049;
+  margin: 10px auto;
+}
+
+.service-box p {
+  color: #4b4b4b;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  .service-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .service-box img {
+    max-width: 100%;
+    width: 400px;
+    height: 150px;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .service-container{
+    width: 225px;
+    margin: 0 auto;
+  }
+  .service-box img {
+    max-width: 100%;
+    width: 300px;
+    height: 100px;
+    border-radius: 5px;
+  }
+}
+
+/* fim serviços */
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#moreInfo {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 2em;
+  display: none;
+}
+
+/* Button inicio pagina */
+ .btn-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 10px;
+  border-radius: 50%;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: #45a049;
+  border: solid 1px #fff;
+  text-decoration: none;
+}
+.btn-top::after {
+  content: "↑";
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff;
+  transition: margin-top 500ms;
+}
+.btn-top:hover::after {
+  margin-top:-8px;
+}
+/* FIM Button inicio pagina */
+
+@media screen and (max-width: 768px) {
+  .scroll-top-btn {
+      bottom: 10px;
+      right: 10px;
+      padding: 8px 16px;
+  }
+}
+
+
+footer {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  width: 100%;
+  height: 100px;
+  bottom: 0;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/* contato e orçamento */
+
+.orcamento{
+  text-align: center;
+  padding: 10px;
+}
+.orcamento h1{
+  color: #555555;
+  padding-top: 10px
+}
+
+.contact-section {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.contact-form,
+.contact-info {
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.contact-form h2,
+.contact-info h2 {
+  margin-bottom: 20px;
+  color: #4CAF50;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 16px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #45a049;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  .contact-section {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .contact-form,
+  .contact-info {
+      max-width: none;
+      width: 100%;
+  }
+}
+
+
