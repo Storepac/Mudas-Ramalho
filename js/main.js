@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', function () {
             });
 
             // Substitua 'your_email_template_id' com o ID do seu modelo de e-mail no Email.js
-            emailjs.send("service_your_emailjs_service_id", "your_email_template_id", data)
+            emailjs.send("service_2xknggv", "ramalhomudas@gmail.com", data)
                 .then(function (response) {
                     console.log("E-mail enviado com sucesso:", response);
                     alert("Mensagem enviada com sucesso!");
