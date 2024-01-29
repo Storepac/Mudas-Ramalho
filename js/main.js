@@ -176,6 +176,26 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+// modal 
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Exibe o modal quando a página é carregada
+    showModal();
+
+    // Função para exibir o modal
+    function showModal() {
+        const modal = document.getElementById('myModal');
+        modal.style.display = 'block';
+    }
+
+    // Função para fechar o modal
+    window.closeModal = function () {
+        const modal = document.getElementById('myModal');
+        modal.style.display = 'none';
+    };
+});
+
+
 
 
 
